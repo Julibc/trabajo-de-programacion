@@ -8,7 +8,7 @@
                 }
             
             body {
-                background-color: #EAFAD9
+                background-color: #EAFAD9;
                 }
                 
             header nav ul li a {
@@ -29,10 +29,49 @@
             
            section {
            backgruond-color: #8F9E72;}
-            
+           
+			.container  {
+     			background-color: #EAFAD9;
+        		display: grid;
+       		 	grid-template-columns: 50% 50%;
+        		}
+        
+    		 div {
+     			border: 0px solid  #EAFAD9;
+        		padding: 14px;
+        		}
+     
+    	 	.container div  {
+     			background-color: #8F9E72;
+        		}
+             
+      @media screen and (max-width: 480px) {
+      		* {
+      			margin:0px;
+       			padding:0px;
+        		}
+        
+     		.container  {
+     			background-color: #BAC7AD;
+        		display: block;
+        		}
+        
+     		div {
+     			border: 2px solid #BAC7AD;
+        		padding: 14px;
+        		}
+     
+           .container div  {
+     			background-color: #637A51;
+        		}
+           .content3  {
+      			display:none;
+      			}
+          .container div {
+      			border-radius: 50px;
+        		margin:15px;}
+        		}
     	</style>
-		  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> Konnichiwa :3</title>
 	</head>
 	<body>
@@ -46,28 +85,28 @@
                 </ul>
         	</nav>
         </header>
+        
+       <div class="container">
 		<section>
         	<div clas="content1">
-            	<div>  </div>
-                <div> </div>
+            	<div> Tipos de webs </div>
+                <div> Problebmas con los webs </div>
         	</div>
         </section>
         
 		<section>
         	<div clas="content2">
-            	<div> </div>
-                <div> </div>
+            	<div> web superficial</div>
+                <div> deep web </div>
         	</div>
         </section>
         
 		<section>
         	<div clas="content3">
-            	<div>  </div>
-                <div> </div>
+            	<div> mas informacion </div>
+                <div> conoce mi sitio favorito </div>
         	</div>
         </section>
-
+		</div>
 	</body>
 </html>
-
-
