@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    	<style>
-        	* {
-            	margin:0px;
-            	padding:0px;
+<head>
+  <style>
+         * {
+             margin:0px;
+             padding:0px;
                 }
             
             body {
@@ -12,38 +12,44 @@
                 }
                 
             header nav ul li a {
-            	text-decoration: none;
-            	font-size: 20px;
-            	color: #425222;
+             text-decoration: none;
+             font-size: 20px;
+             color: #425222;
                 padding:15px;
                 }
                 
             header nav ul li {
-           		display:inline;
+             display:inline;
                 }
              
             header nav {
-            	text-align:center;
-            	background-color:#676E5F;
-            	}
-            
+             text-align:center;
+             background-color:#676E5F;
+             }
+             
+            .resp-nav {
+              display:none;
+              color:orange;
+             }
+             
            section {
            backgruond-color: #8F9E72;}
            
-			.container  {
-     			background-color: #EAFAD9;
-        		display: grid;
-       		 	grid-template-columns: 50% 50%;
-        		}
+   .container {
+        background-color: #EAFAD9;
+          display: grid;
+           grid-template-columns: 100% 40% 40% 100%;
+          }
         
-    		 div {
-     			border: 0px solid  #EAFAD9;
-        		padding: 14px;
-        		}
+       div {
+        border: 0px solid #EAFAD9;
+          padding: 14px;
+          border-radius: 60px;
+          }
      
-    	 	.container div  {
-     			background-color: #8F9E72;
-        		}
+       .container div {
+        background-color: #8F9E72;
+          }
        .login form {
         background-color:#BAC7AD;
         text-align: center;
@@ -57,46 +63,62 @@
           }
              
       @media screen and (max-width: 480px) {
-      		* {
-      			margin:0px;
-       			padding:0px;
-        		}
+        * {
+         margin:0px;
+          padding:0px;
+          }
+          
+          header nav {
+          display:none;
+          }
         
-     		.container  {
-     			background-color: #BAC7AD;
-        		display: block;
-        		}
+       .container {
+        background-color: #BAC7AD;
+          display: block;
+          }
         
-     		div {
-     			border: 2px solid #BAC7AD;
-        		padding: 14px;
-        		}
+       div {
+        border: 2px solid #BAC7AD;
+          padding: 14px;
+         border-radius: 60px;
+          }
      
-           .container div  {
-     			background-color: #637A51;
-        		}
-           .content3  {
-      			display:none;
-      			}
+           .container div {
+        background-color: #637A51;
+          }
+           .content3 {
+         display:none;
+         }
           .container div {
-      			border-radius: 50px;
-        		margin:15px;}
-        		}
-    	</style>
-		<title> Konnichiwa :3</title>
-	</head>
-	<body>
-		<header>
-        	<nav>
-        		<ul>
-                	<li> <a href="#"> One </a> </li>
+         border-radius: 50px;
+          margin:15px;}
+          }
+     </style>
+  <title> Konnichiwa :3</title>
+ </head>
+ <body>
+  <header>
+         <nav>
+          <ul>
+                 <li> <a href="#"> One </a> </li>
                     <li> <a href="#"> Uno </a> </li>
                     <li> <a href="#"> Hanna </a> </li>
                     <li> <a href="#"> Un </a> </li>
                 </ul>
-        	</nav>
+         </nav>
+         
+         <nav class="resp-nav">
+          <ul>
+                 <li> <a href="#"> Two </a> </li>
+                    <li> <a href="#"> Dos </a> </li>
+                    <li> <a href="#"> Dul </a> </li>
+                    <li> <a href="#"> Deux </a> </li>
+                </ul>
+         </nav>
         </header>
-        
+        <section>
+        	<h3>Kon'nichiwa sekai!</h3>
+        </section>
        <div class="container">
   <section class="login">
         <form>
@@ -107,27 +129,29 @@
          <input type="password"> 
          <br>
         </form>
-   </section>
-		<section>
-        	<div clas="content1">
-            	<div> Kon'nichiwa sekai! </div>
+   </section><br>
+  <section>
+         <div clas="content1">
+             <div> Kon'nichiwa sekai! </div>
                 <div> Tipos de sitios web </div>
-        	</div>
-        </section>
+         </div>
+        </section><br>
         
-		<section>
-        	<div clas="content2">
-            	<div> web superficial</div>
+  <br><section>
+         <div clas="content2">
+             <div> web superficial</div>
                 <div> deep web </div>
-        	</div>
-        </section>
+         </div>
+        </section><br>
         
-		<section>
-        	<div clas="content3">
-            	<div> mas informacion </div>
+  <section>
+         <div clas="content3">
+             <div> mas informacion </div>
                 <div> conoce mi sitio favorito </div>
-        	</div>
-        </section>
-		</div>
-	</body>
+         </div>
+        </section><br>
+  </div>
+ </body>
 </html>
+
+
